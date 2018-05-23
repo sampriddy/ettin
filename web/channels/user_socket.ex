@@ -2,7 +2,8 @@ defmodule Ettin.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", Ettin.RoomChannel
+  channel "input", Ettin.InputChannel
+  channel "output", Ettin.OutputChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
